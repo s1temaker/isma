@@ -1,60 +1,218 @@
-@import "../fonts/fonts.css";
-
-/* main */
-
-html,
-body {
-    font: normal 15px/26px CeraPro;
-    color: #454442;
-    background-color: #373736;
-}
-
-#wrapper {
-    min-height: 100vh;
-    overflow: hidden;
-}
-
-h1,
-.h1 {
-    font: 500 60px/72px CeraPro;
-    color: #454442;
-}
-
-h2,
-.h2 {
-    margin-bottom: 50px;
-    font: 500 60px/72px CeraPro;
-    color: #4F4F4F;
-}
-
-h4,
-.h4 {
-    margin-bottom: 10px;
-    font: 500 40px/50px CeraPro;
-    color: #4F4F4F;
-}
-
-h5,
-.h5 {
-    margin-bottom: 20px;
-    font: 500 30px/40px CeraPro;
-    color: #4F4F4F;
-}
-
-p {
-    font: normal 15px/26px CeraPro;
-    color: #454442;
-}
-
-a {
-    color: #fff;
-    transition: color 300ms ease;
-}
-
-a:hover {
-    color: #FCD9A6!important;
-    text-decoration: none;
-}
-
-
-/* main */
+    @import "../fonts/fonts.css";
+    /* main */
+    
+    html,
+    body {
+        font: normal 18px/26px ProbaPro;
+        color: #373736;
+        background-color: #E5E5E5;
+    }
+    
+    #wrapper {
+        min-height: 100vh;
+        overflow: hidden;
+    }
+    
+    h1,
+    .h1 {
+        font: 500 60px/72px CeraPro;
+        color: #454442;
+    }
+    
+    h2,
+    .h2 {
+        margin-bottom: 50px;
+        font: 500 60px/72px CeraPro;
+        color: #4F4F4F;
+    }
+    
+    h4,
+    .h4 {
+        margin-bottom: 10px;
+        font: 500 40px/50px CeraPro;
+        color: #4F4F4F;
+    }
+    
+    h5,
+    .h5 {
+        margin-bottom: 20px;
+        font: 500 30px/40px CeraPro;
+        color: #4F4F4F;
+    }
+    
+    p {
+        font: normal 15px/26px CeraPro;
+        color: #454442;
+    }
+    
+    a {
+        color: #373736;
+        transition: color 300ms ease;
+    }
+    
+    a:hover {
+        color: #373736!important;
+        text-decoration: none;
+    }
+    
+    .container,
+    .container-lg,
+    .container-md,
+    .container-sm,
+    .container-xl {
+        max-width: 1470px;
+    }
+    /* main */
+    /* buttons */
+    
+    .btn {
+        height: 58px;
+        padding: 1em 2em;
+        font: 600 18px/23px ProbaPro;
+        color: #FFFFFF;
+        border: 0 none!important;
+        outline: 0 none!important;
+        border-radius: 4px;
+        box-shadow: none!important;
+    }
+    
+    .btn-primary {
+        background-color: #FF1F3A;
+    }
+    
+    .btn-primary:hover,
+    .btn-primary:active,
+    .btn-primary:focus,
+    .btn-primary:visited {
+        background-color: #E51D21!important;
+    }
+    /* buttons */
+    /* icons */
+    
+    .ico.qrcode {
+        width: 58px;
+        height: 58px;
+        display: block;
+        background: url(../imgs/qr_code.png) no-repeat 50% / cover;
+    }
+    /* icons */
+    /* header */
+    
+    #header {
+        width: 100%;
+        top: 0;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+        background-color: rgba(8, 109, 21, 0.6);
+    }
+    
+    #header .border-bottom {
+        padding-top: 12px;
+        padding-bottom: 12px;
+        border-color: rgba(255, 255, 255, .4);
+    }
+    
+    #header .logo {
+        width: 156px;
+        height: 53px;
+        display: block;
+        background: url(../imgs/logo.png) no-repeat 0 / cover;
+    }
+    
+    #header .phone__box a {
+        font: bold 18px/26px ProbaPro;
+    }
+    
+    #header .phone__box span {
+        font: 500 14px/20px ProbaPro;
+    }
+    
+    #header .link__favorite .qty {
+        min-width: 15px;
+        height: 15px;
+        padding: 1.5px 2px;
+        display: block;
+        position: absolute;
+        bottom: -4px;
+        right: -5px;
+        font: 600 12px/12px ProbaPro;
+        color: #fff;
+        text-align: center;
+        border-radius: 15px;
+        background-color: #FF1F3A;
+    }
+    
+    #header .link__favorite .ico {
+        width: 24px;
+        height: 24px;
+        display: block;
+        background: url(../imgs/icons/heart_icon.svg) no-repeat 50% / 24px 24px;
+        transition: all 300ms ease;
+    }
+    
+    #header .link__favorite:hover .ico {
+        background-image: url(../imgs/icons/heart_icon_hover.svg);
+    }
+    /* header */
+    /* formSearch */
+    
+    #formSearch {
+        height: 48px;
+    }
+    
+    #formSearch .form-control {
+        min-width: 350px;
+        height: 100%;
+        padding-right: 64px;
+        font: 600 18px/23px ProbaPro;
+        color: #fff;
+        border: 1px solid transparent;
+        outline: 0 none!important;
+        border-radius: 4px;
+        background-color: rgba(255, 255, 255, .2);
+    }
+    
+    #formSearch .form-control:focus {
+        border-color: #fff;
+        box-shadow: none;
+    }
+    
+    #formSearch .form-control::-webkit-input-placeholder {
+        color: rgba(255, 255, 255, .7);
+    }
+    
+    #formSearch .form-control::-moz-placeholder {
+        color: rgba(255, 255, 255, .7);
+    }
+    
+    #formSearch .form-control:-ms-input-placeholder {
+        color: rgba(255, 255, 255, .7);
+    }
+    
+    #formSearch .form-control::-ms-input-placeholder {
+        color: rgba(255, 255, 255, .7);
+    }
+    
+    #formSearch .form-control::placeholder {
+        color: rgba(255, 255, 255, .7);
+    }
+    
+    #formSearch button[type="submit"] {
+        width: 64px;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        right: 0;
+        border: 0 none;
+        outline: 0 none;
+        border-radius: 0 4px 4px 0;
+        background: url(../imgs/icons/search_icon.svg) no-repeat 50% 50% / 24px 24px;
+        transition: all 300ms ease;
+    }
+    
+    #formSearch button[type="submit"]:hover {
+        background: url(../imgs/icons/search_icon_hover.svg) no-repeat 50% 50% / 24px 24px;
+        background-color: #fff;
+    }
+    /* formSearch */
