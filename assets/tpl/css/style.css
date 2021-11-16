@@ -1,0 +1,60 @@
+@import "../fonts/fonts.css";
+
+/* main */
+
+html,
+body {
+    font: normal 15px/26px CeraPro;
+    color: #454442;
+    background-color: #373736;
+}
+
+#wrapper {
+    min-height: 100vh;
+    overflow: hidden;
+}
+
+h1,
+.h1 {
+    font: 500 60px/72px CeraPro;
+    color: #454442;
+}
+
+h2,
+.h2 {
+    margin-bottom: 50px;
+    font: 500 60px/72px CeraPro;
+    color: #4F4F4F;
+}
+
+h4,
+.h4 {
+    margin-bottom: 10px;
+    font: 500 40px/50px CeraPro;
+    color: #4F4F4F;
+}
+
+h5,
+.h5 {
+    margin-bottom: 20px;
+    font: 500 30px/40px CeraPro;
+    color: #4F4F4F;
+}
+
+p {
+    font: normal 15px/26px CeraPro;
+    color: #454442;
+}
+
+a {
+    color: #fff;
+    transition: color 300ms ease;
+}
+
+a:hover {
+    color: #FCD9A6!important;
+    text-decoration: none;
+}
+
+
+/* main */
