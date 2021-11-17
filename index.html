@@ -36,20 +36,92 @@
                     <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#callmeModal">Заказать звонок</button>
                 </div>
             </div>
-            <nav id="mainMenu">
-                <ul class="nav">
-                    <li class="nav-item"><a href="" class="nav-link">О компании</a></li>
-                    <li class="nav-item"><a href="" class="nav-link">Недвижимость</a></li>
-                    <li class="nav-item"><a href="" class="nav-link">Строительство</a></li>
-                    <li class="nav-item"><a href="" class="nav-link">Услуги</a></li>
-                    <li class="nav-item"><a href="" class="nav-link">Акции</a></li>
-                    <li class="nav-item"><a href="" class="nav-link">Контакты</a></li>
+            <nav class="row" id="mainMenu">
+                <ul class="w-100 nav justify-content-between">
+                    <li class="nav-item mr-3"><a href="" class="nav-link px-0">О компании</a></li>
+                    <li class="nav-item mr-3"><a href="" class="nav-link px-0">Недвижимость</a></li>
+                    <li class="nav-item mr-3 dropdown">
+                        <a href="#" class="nav-link px-0 dropdown-toggle" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Строительство</a>
+                        <div class="dropdown-menu">
+                            <ul class="nav px-3">
+                                <li class="nav-item"><a href="" class="nav-link px-0">Первая ссылка строительство</a></li>
+                                <li class="nav-item"><a href="" class="nav-link px-0">Вторая ссылка строительство</a></li>
+                                <li class="nav-item"><a href="" class="nav-link px-0">Третия ссылка строительство</a></li>
+                                <li class="nav-item"><a href="" class="nav-link px-0">Четвертая ссылка строительство</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="nav-item mr-3 dropdown">
+                        <a href="#" class="nav-link px-0 dropdown-toggle" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Услуги</a>
+                        <div class="dropdown-menu">
+                            <ul class="nav px-3">
+                                <li class="nav-item"><a href="" class="nav-link px-0">Первая ссылка услуги</a></li>
+                                <li class="nav-item"><a href="" class="nav-link px-0">Вторая ссылка услуги</a></li>
+                                <li class="nav-item"><a href="" class="nav-link px-0">Третия ссылка услуги</a></li>
+                                <li class="nav-item"><a href="" class="nav-link px-0">Четвертая ссылка услуги</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="nav-item mr-3"><a href="" class="nav-link px-0">Акции</a></li>
+                    <li class="nav-item"><a href="" class="nav-link px-0">Контакты</a></li>
                 </ul>
             </nav>
         </div>
     </header>
     <div class="d-flex flex-column justify-content-between" id="wrapper">
         <main id="main">
+            <div class="position-relative" id="mainSlider">
+                <div class="owl-carousel">
+                    <div style="background-image: url(assets/images/slider/slide1.jpg);">
+                        <div class="h-100 container">
+                            <div class="h-100 row align-items-end">
+                                <div class="col-6">
+                                    <div class="slide__content p-5">
+                                        <span class="h1 d-inline-block text-white mb-4">Построим дом по цене однокомнатной квартиры</span>
+                                        <p class="text-white mb-4">Каркасный дом от 4 млн руб. Срок: 2-3 месяца</p>
+                                        <button type="button" class="w-50 btn btn-primary" data-toggle="modal" data-target="#callmeModal">Заказать звонок</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div style="background-image: url(assets/images/slider/slide2.jpg);">
+                        <div class="h-100 container">
+                            <div class="h-100 row align-items-end">
+                                <div class="col-6">
+                                    <div class="slide__content p-5">
+                                        <span class="h1 d-inline-block text-white mb-4">Видео-показ загородной
+                                        недвижимости </span>
+                                        <p class="text-white mb-4">Получите подробный видео-обзор квартиры или дома онлайн</p>
+                                        <button type="button" class="w-50 btn btn-primary" data-toggle="modal" data-target="#callmeModal">Заказать звонок</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div style="background-image: url(assets/images/slider/slide3.jpg);">
+                        <div class="h-100 container">
+                            <div class="h-100 row align-items-end">
+                                <div class="col-6">
+                                    <div class="slide__content p-5">
+                                        <span class="h1 d-inline-block text-white mb-4">Строительство домов
+                                        акция какая-нибудь</span>
+                                        <p class="text-white mb-4">Получите подробный видео-обзор квартиры или дома онлайн</p>
+                                        <button type="button" class="w-50 btn btn-primary" data-toggle="modal" data-target="#callmeModal">Заказать звонок</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="w-100 owl__dots">
+                    <div class="container">
+                        <div class="row justify-content-end">
+                            <div class="col-auto d-flex"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </main>
         <footer id="footer">
             <div class="container">
